@@ -1,10 +1,7 @@
 import os
 import uuid
-
-from flask import (Flask, flash, redirect, render_template, request,
-                   send_from_directory, url_for)
-
-#from style import main 
+from flask import Flask, flash, redirect, render_template, request, send_from_directory, url_for
+from style import main 
 
 
 UPLOAD_FOLDER = './static/images/'
@@ -14,18 +11,16 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-
-
 # check if file extension is right
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 # force browser to hold no cache. Otherwise old result might return.
 @app.after_request
@@ -64,14 +59,9 @@ def upload_file():
             if file and allowed_file(file.filename):
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], file_names[i]))
 
-        #main(UPLOAD_FOLDER+file_names([0], UPLOAD_FOLDER+file_names[1]) 
-        #return send_from_directory("./", "genrated.png")
-        return send_from_directory(UPLOAD_FOLDER, "genrated.png")
+        main(UPLOAD_FOLDER+file_names([0], UPLOAD_FOLDER+file_names[1]) 
+        return send_from_directory("./", "genrated.png")
         
-
-
-
-
 
 
 if __name__ == "__main__":
