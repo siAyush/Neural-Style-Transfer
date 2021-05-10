@@ -30,13 +30,23 @@ python3 app.py
 ## Example
 Base Image 
 
+<div align="center"> 
+    
 ![Base](static/images/20b76145-957a-4547-aa24-0f10733bc96f.png)
+
+</div>
 
 Style Image
 
+<div align="center"> 
+    
 ![Style](static/images/978dbb85-25c2-4074-ac59-78caa2a1d694.png)
 
+</div>
 
 Genrated Image
-
+<div align="center"> 
+    
 ![Genrated](genrated.png)
+
+</div>
