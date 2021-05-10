@@ -1,8 +1,17 @@
-# Neural Style Transfer
+<H1> <div align="center"> Neural Style Transfer </H1>
+<br>
 
+<p align="center">
+    <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+    <img alt="NumPy" src="https://img.shields.io/badge/numpy%20-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
+    <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow%20-%23FF6F00.svg?&style=for-the-badge&logo=TensorFlow&logoColor=white" />
+    <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter%20-%23F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white" />
+</p>
+<br>
+<div align="center"> 
 Neural style transfer consists in generating an image with the same "content" as a base image, but with the "style" of a different picture. 
 This is achieved through the optimization of a loss function that has 3 components: "style loss", "content loss", and "total variation loss".
-
+</div>
 
 
 ## Implementation Details
