@@ -59,7 +59,7 @@ def upload_file():
             if file and allowed_file(file.filename):
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], file_names[i]))
 
-        main(UPLOAD_FOLDER+file_names([0], UPLOAD_FOLDER+file_names[1]) 
+        main(UPLOAD_FOLDER+file_names[0], UPLOAD_FOLDER+file_names[1]) 
         return send_from_directory("./", "genrated.png")
         
 
